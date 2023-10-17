@@ -40,15 +40,14 @@ int main() {
     	cout << "何個生成しますか？1～9" << endl;
     	cin >> size;
     	arr = new int[size];
-    	delete[] arr;
-    	arr = NULL;
-
         randok(arr, size);
-    bubbleSort(arr, size);
+        bubbleSort(arr, size);
+
+    	delete[] arr;
+
+     
 
  
-
-    return 0;
 }
 
 
